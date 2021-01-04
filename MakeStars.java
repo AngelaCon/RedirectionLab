@@ -7,12 +7,20 @@ public class MakeStars {
     while (n.hasNextLine()) {
         String line = n.nextLine();
         Scanner newLine = new Scanner(line);
-        while (newLine.hasNextLine()) {
-            String word = newLine.nextLine();
+        String addHere = "";
+        while (newLine.hasNext()) {
+            String word = newLine.next();
             for (int i = 0; i < word.length(); i++) {
-                System.out.println('*');
+                addHere += "*";
             }
+            if (newLine.hasNext()) {
+                addHere += " ";
+            }
+
+
         }
+        System.out.println(addHere);
     }
+
 }
 }
