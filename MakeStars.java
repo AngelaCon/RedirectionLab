@@ -16,8 +16,6 @@ public class MakeStars {
             if (newLine.hasNext()) {
                 addHere += " ";
             }
-
-
         }
         System.out.println(addHere);
     }
